@@ -9,16 +9,16 @@
 </head>
 <body class="text-center">
     <section>
-        <h1 class="text-uppercase my-3 text-white">calcola il prezzo del tuo biglietto</h1>
-        <form id="ticket-form" class="bg-light w-75 mx-auto p-2 rounded-5">
+        <h1 class="text-uppercase my-3 text-white">calcola il prezzo del tuo biglietto:</h1>
+        <div class="bg-light w-75 mx-auto p-2 rounded-5">
             <div class="container my-3">
                 <div class="row">
                     <div class="col-12 col-md-6 py-5">
                         <img src="./img/240_F_134397321_UwHnuSdXzqvCNzJxevKZkGaPF8hLQyMk.jpg" class="img-thumbnail" alt="Treno">
                     </div>
                     <div class="col-12 col-md-6 p-5">
-                        <!-- <label for="nome" class="form-label me-4">Nome e cognome:</label>
-                        <input type="text" id="nome" class="mb-3 border border-black rounded-2" placeholder="Inserisci nome e cognome"> -->
+                        <label for="nome" class="form-label me-4">Nome e cognome:</label>
+                        <input type="text" id="nome" class="mb-3 border border-black rounded-2" placeholder="Inserisci nome e cognome">
                         <label for="km" class="form-label me-4">Km da percorrere:</label>
                         <input type="text" id="km" class="mb-3 border border-black rounded-2" placeholder="Inserisci km da percorrere">
                         <label for="eta" class="form-label me-3">Età del passeggero:</label>
@@ -27,26 +27,26 @@
                     </div>
                 </div>
             </div>
-        </form>
+        </div>
     </section>
-    <!-- <section class="">
-        <h2 class="text-uppercase my-3 text-white">Ecco il tuo biglietto</h2>
+    <section id="riepilogo" class="d-none">
+        <h2 class="text-uppercase my-3 text-white">Ecco il tuo biglietto:</h2>
         <div class="card w-50 mx-auto">
             <div class="card-header text-center fs-3 bg-secondary-subtle text-black">
                 BooleanTrain
             </div>
             <div class="card-body bg-secondary">
                 <h5 class="card-title">Nome passeggero:</h5>
-                <p id="nome_passeggero"></p>
+                <p id="nome_passeggero" class="text-uppercase fw-bold"></p>
                 <h5 class="card-title">Prezzo del biglietto:</h5>
                 <p id="prezzo_biglietto"></p>
                 <a href="#" class="btn btn-light">Acquista</a>
             </div>
             <div class="card-footer text-body-secondary">
-                <p>Ti auguriamo buon viaggio!</p>
+                <p class="fs-3">Ti auguriamo buon viaggio!</p>
             </div>
         </div>
-    </section> -->
+    </section>
     <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>

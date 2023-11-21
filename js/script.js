@@ -5,6 +5,7 @@ const button = document.querySelector('.calcola');
 
 // aggiungo una funzione al bottone "Calcola prezzo" tramite click
 button.addEventListener('click', function(){
+    
     // dichiaro una variabile km prendendo il valore dell'elemento input con id #km
     let km = document.getElementById('km').value;
     console.log(km)
@@ -23,23 +24,26 @@ button.addEventListener('click', function(){
         prezzo_biglietto *= 0.6;
     }
     
-   
     // formatto il prezzo con max due decimali 
     prezzo_biglietto = prezzo_biglietto.toFixed(2);
 
     // stampo il prezzo finale con eventuale sconto in console
     console.log("Il prezzo del biglietto è di €" +  prezzo_biglietto);
 
-    // // MILESTONE 2
+    // MILESTONE 2
 
-    // // dichiaro una variabile nome prendendo il valore dell'elemento input con id #nome
-    // let nome = document.getElementById('nome').value;
+    // rendo visibile la sezione del riepilogo biglietto
+    document.getElementById('riepilogo').className = "d-block my-5"
 
-    // // mostro il nome del passegger a video in HTML
-    // document.getElementById('nome_passeggero').innerHTML = nome;
+    // dichiaro una variabile nome prendendo il valore dell'elemento input con id #nome
+    let nome = document.getElementById('nome').value;
 
-    // // mostro il prezzo finale con eventuale sconto a video in HTML
-    // document.getElementById('prezzo_biglietto').innerHTML = ("Il prezzo del biglietto è di €" +  prezzo_biglietto);
+    // mostro il nome del passeggero a video in HTML
+    document.getElementById('nome_passeggero').innerHTML = nome;
+
+    // mostro il prezzo finale con eventuale sconto a video in HTML
+    document.getElementById('prezzo_biglietto').innerHTML = ("Il prezzo del biglietto è di €" +  prezzo_biglietto);
+
 })
 
 

@@ -8,7 +8,7 @@ button.addEventListener('click', function(){
     
     // dichiaro una variabile km prendendo il valore dell'elemento input con id #km
     let km = document.getElementById('km').value;
-    console.log(km)
+    
     // dichiaro una variabile eta prendendo il valore dell'elemento input con id #eta
     let eta = document.getElementById('eta').value;
     

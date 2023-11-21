@@ -4,13 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcola il prezzo del tuo biglietto</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-<body>
+<body class="text-center">
     <section>
-        <input type="text" id="km" placeholder="Inserisci km da percorrere">
-        <input type="text" id="eta" placeholder="Inserisci l'età del passeggero">
-        <button class="btn">Calcola prezzo</button>
+        <h1 class="text-uppercase my-3 text-white">calcola il prezzo del tuo biglietto</h1>
+        <form id="ticket-form" class="bg-light w-75 mx-auto p-2 rounded-5">
+            <div class="container my-3">
+                <div class="row">
+                    <div class="col-12 col-md-6 py-5">
+                        <img src="./img/240_F_134397321_UwHnuSdXzqvCNzJxevKZkGaPF8hLQyMk.jpg" class="img-thumbnail" alt="Treno">
+                    </div>
+                    <div class="col-12 col-md-6 p-5">
+                        <!-- <label for="nome" class="form-label me-4">Nome e cognome:</label>
+                        <input type="text" id="nome" class="mb-3 border border-black rounded-2" placeholder="Inserisci nome e cognome"> -->
+                        <label for="km" class="form-label me-4">Km da percorrere:</label>
+                        <input type="text" id="km" class="mb-3 border border-black rounded-2" placeholder="Inserisci km da percorrere">
+                        <label for="eta" class="form-label me-3">Età del passeggero:</label>
+                        <input type="text" id="eta" class="mb-3 border border-black rounded-2" placeholder="Inserisci l'età">
+                        <button class="calcola btn btn-primary mt-4">Genera biglietto</button>
+                    </div>
+                </div>
+            </div>
+        </form>
     </section>
+    <!-- <section class="">
+        <h2 class="text-uppercase my-3 text-white">Ecco il tuo biglietto</h2>
+        <div class="card w-50 mx-auto">
+            <div class="card-header text-center fs-3 bg-secondary-subtle text-black">
+                BooleanTrain
+            </div>
+            <div class="card-body bg-secondary">
+                <h5 class="card-title">Nome passeggero:</h5>
+                <p id="nome_passeggero"></p>
+                <h5 class="card-title">Prezzo del biglietto:</h5>
+                <p id="prezzo_biglietto"></p>
+                <a href="#" class="btn btn-light">Acquista</a>
+            </div>
+            <div class="card-footer text-body-secondary">
+                <p>Ti auguriamo buon viaggio!</p>
+            </div>
+        </div>
+    </section> -->
     <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>

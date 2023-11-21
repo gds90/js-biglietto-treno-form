@@ -16,3 +16,15 @@ Il recap dei dati e l'output del prezzo finale, andranno quindi stampati in pagi
 Sono richiesti almeno 5 push.
 Consigli:
 Rispettate le milestone., non andate avanti se non avete completato prima quella precedente.
+
+<!-- SOTTOPROBLEMI -->
+- Creo nel file index.html due input e un bottone;
+- In un input chiedo al passeggero il numero di km da percorrere, nell'altro la sua età;
+- Andando ad acquisire i valori di questi due campi input, vado a calcolarmi il prezzo del biglietto tenendo conto di:
+    - Se il passeggero è minorenne, applico uno sconto sul prezzo del biglietto del 20%;
+    - altrimenti, se il passeggero è over 65, applico uno sconto sul prezzo del biglietto del 40%;
+    - se il passeggero è nel range 18-64, non applico nessuna scontistica;    
+- Mostro in console il prezzo del biglietto comprensivo di eventuale sconto;
+
+- Quando il programma è funzionante, passo alla Milestone 2 creando un recap dei dati inseriti e il prezzo del biglietto su un biglietto fittizio stilizzato in CSS.
+

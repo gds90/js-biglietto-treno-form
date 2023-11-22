@@ -8,7 +8,7 @@ button.addEventListener('click', function(){
     
     // dichiaro una variabile km prendendo il valore dell'elemento input con id #km
     let km = document.getElementById('km').value;
-    
+
     // dichiaro una variabile eta prendendo il valore dell'elemento input con id #eta
     let eta = document.getElementById('eta').value;
     
@@ -39,10 +39,10 @@ button.addEventListener('click', function(){
     let nome = document.getElementById('nome').value;
 
     // mostro il nome del passeggero a video in HTML
-    document.getElementById('nome_passeggero').innerHTML = nome;
+    document.getElementById('nome_passeggero').innerText = nome;
 
     // mostro il prezzo finale con eventuale sconto a video in HTML
-    document.getElementById('prezzo_biglietto').innerHTML = ("Il prezzo del biglietto è di €" +  prezzo_biglietto);
+    document.getElementById('prezzo_biglietto').innerText = ("Il prezzo del biglietto è di €" +  prezzo_biglietto);
 
 })
 
